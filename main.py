@@ -10,16 +10,16 @@ def main():
         data = get_data('AAPL','2020-01-01','2022-01-01')
 
         # Process data
-        data = process_data(data)
+        train_data, test_data, scaler = process_data(data)
 
         # Build model
         model = build_model()
 
         # Train model
-        model = train_model(model, data)
+        model = train_model(model, train_data)
 
         # Predict and evaluate
-        predict_and_evaluate(model, data)
+        predict_and_evaluate(model, test_data, scaler)
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
