@@ -2,6 +2,7 @@
 
 This project is a simple stock price predictor using Machine Learning, specifically an LSTM model. The project fetches historical stock data, processes it, trains a model on this data, and then uses this model to predict stock prices.
 
+![Alt text](/Figure_1.png)
 ## Development Status
 
 This project is currently in development. 
