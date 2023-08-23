@@ -23,7 +23,7 @@ def main():
         data = get_data('AAPL','2020-01-01','2022-01-01')
 
         # Process data
-        train_data, test_data, scaler = process_data(data)
+        train_data, train_labels, test_data, test_labels, scaler = process_data(data)
 
         # Build model
         model = build_model()
